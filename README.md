@@ -1,5 +1,5 @@
 <div align="center">
-	<h1>Infinite Series Tracker </h1>
+	<h1>Infinite Series Calculator </h1>
     <br>
 
 [![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com)
@@ -26,16 +26,16 @@
         </td>
     </tr>
 <tr align='center'  width='100%'><td align='center'><sup> Follow Ahmad's #FOSS work on GitHub <a href='https://github.com/Pawarashish564'>@Aashish Pawar⚡</a> 
-</a></sup></td><td align='center'>🙌</td></tr>
+</a></sup>🙌</td></tr>
 </table>
 
 </div>
 
 <br>
 
-# 👉 `Test a Infinite Series Function`
+# 👉 Test a Infinite Series Function
 
-> `just use -f command line option with a function like 1/n , 1/n**2, 1/fact(n),1/n*2,1/1/n**3` etc and provide upper and lower limit (starting and ending points of a series).
+> ``` just use -f command line option with a function like 1/n , 1/n**2, 1/fact(n),1/n*2,1/n**3 ``` etc and provide upper and lower limit (starting and ending points of a series).
 
 `Supported Mathematical functions` are:
 
@@ -51,7 +51,7 @@
 Let's check simple infinite series convergence..
 
 #### ⚡️ Quick Overview
-Consider this series 
+Consider this series. 
 <br>
 <p align="center">
 <img src="https://latex.codecogs.com/svg.latex?\sum_{n=0}^{%20\infty%20}%201/n!">
@@ -67,3 +67,6 @@ python series_calc.py -f 1/fact(n) -l 0
 
 > 🎛   _you'll get 2.718281828459045223732791526816949842789 which exacly equal to constant e_.
 
+<br>
+
+# Work in Progress 🏗 ...
