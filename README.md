@@ -2,6 +2,7 @@
 	<h1>Infinite Series Calculator </h1>
     <br>
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/b0a8af44f7fe4625859e12b45a295c57)](https://app.codacy.com/manual/pawarashish564/Infinite-Series-Calculator?utm_source=github.com&utm_medium=referral&utm_content=pawarashish564/Infinite-Series-Calculator&utm_campaign=Badge_Grade_Settings)
 [![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/not-an-issue.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com) 
