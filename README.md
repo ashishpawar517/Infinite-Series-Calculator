@@ -6,7 +6,7 @@
 [![Emoji Commits](
 https://img.shields.io/badge/Emoji%20%F0%9F%98%9C-Commits-yellow
 )](https://marketplace.visualstudio.com/items?itemName=Aashish.emoji-in-git-commit)
-
+![build](https://github.com/pawarashish564/Infinite-Series-Calculator/workflows/build/badge.svg)
 <br>
 
 [![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com)
@@ -73,7 +73,7 @@ python series_calc.py -f 1/fact(n) -l 0
 ```
 ![](.github/first_series.png)
 
-> 🎛   _you'll get 2.718281828459045223732791526816949842789 which exacly equal to constant e_.
+> 🎛   _you'll get 2.7182818284590452237327915268 which exacly equal to constant e_.
 
 <br>
 
