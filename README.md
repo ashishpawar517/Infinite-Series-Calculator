@@ -2,6 +2,13 @@
 	<h1>Infinite Series Calculator </h1>
     <br>
 
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/0f474033ac114868b7a68151ae720f26)](https://www.codacy.com/manual/pawarashish564/Infinite-Series-Calculator?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=pawarashish564/Infinite-Series-Calculator&amp;utm_campaign=Badge_Grade)
+[![Emoji Commits](
+https://img.shields.io/badge/Emoji%20%F0%9F%98%9C-Commits-yellow
+)](https://marketplace.visualstudio.com/items?itemName=Aashish.emoji-in-git-commit)
+
+<br>
+
 [![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/not-an-issue.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com) 
