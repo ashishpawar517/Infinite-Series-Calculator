@@ -41,7 +41,7 @@ Supported Mathematical functions are:
 - 🥞 fact(n) ✓ (calculation many n! type of series)
 - 🤠 trigonometric functions sin(n), cos(n), tan(n) ✓
 - 🗃 More Functions coming soon ✓
-<!-- - 🐎 sqrt ✓ -->
+- 🐎 sqrt(n), cuberoot(n) ✓
 <!-- - 💯 other series functions ✓ -->
 <br>
 

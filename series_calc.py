@@ -32,6 +32,11 @@ def cos(n):
 def tan(n):
     return m.tan(n)
 
+def sqrt(n):
+    return m.sqrt(n)
+
+def cuberoot(n):
+    return n**(1/3)
 
 # command line argument processing
 parser = argparse.ArgumentParser(
@@ -45,6 +50,8 @@ parser = argparse.ArgumentParser(
             4. sin(n) = trigonometric sin(x)
             5. cos(n) = trigonometric cos(x)
             6. tan(n) = trigonometric tan(x)
+            7. sqrt(n) = square root of a number
+            8. cuberoot(n) = cuberoot of a number
          '''))
 parser.add_argument('-u ', '--upper', type=int,
                     default=500, help='max # no of terms')
