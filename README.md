@@ -14,7 +14,7 @@
         <td align='center' width='100%' colspan='2'>
            <strong>
            <code>Simple Infinite Series Calculator</code></strong><br />
-            👉 Just Put a Series function,upper and lower limits.
+            👉 Just Put a Series function,upper and lower limits and specifiy precision.
             <br>
             <img src="https://latex.codecogs.com/svg.latex?\sum_{n=0}^{100000}%20f(n)">
         </td>
@@ -64,10 +64,30 @@ we know that this series converge to <a href="https://en.wikipedia.org/wiki/E_(m
 ```sh
 python series_calc.py -f 1/fact(n) -l 0
 ```
-
+![](.github/first_series.png)
 
 > 🎛   _you'll get 2.718281828459045223732791526816949842789 which exacly equal to constant e_.
 
 <br>
 
-## WORK IN  PROGRESS 🏗 ...
+## Workflow ! 
+
+There are just one option i.e -f which is important for your series_calc workflow. Specify the lower limit using -l or upper limit using -u and precision using -s (scale) option. 
+<div align="center">
+<img src = ".github/demo.gif">
+</div>
+<br>
+<!-- ![]() -->
+
+## Help & Other
+
+Use -h option to get information about all the options supported.
+
+![](.github/help_menu.png)
+
+
+## Todo
+
+- Arithmetic and mathematical functions
+- Multiple Transforms 
+- Mathematical Constants support
