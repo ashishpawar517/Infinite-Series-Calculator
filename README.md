@@ -8,8 +8,7 @@
 [![forthebadge](https://forthebadge.com/images/badges/check-it-out.svg)](https://forthebadge.com)
 
 <!-- $\sum_{i=1}^{10} t_i$ -->
-<!-- ![equation](https://latex.codecogs.com/svg.latex?\sum_{n=0}^{100000}%20f(n)) -->
-
+<!-- for equations https://latex.codecogs.com/ -->
 <table width='100%' align="center">
     <tr align='center'>
         <td align='center' width='100%' colspan='2'>
@@ -25,7 +24,7 @@
             A FOSS (Free & Open Source Software) project. Maintained by <a href='https://github.com/pawarashish564'>@Aashish Pawar ⚡</a>.
         </td>
     </tr>
-<tr align='center'  width='100%'><td align='center'><sup> Follow Ahmad's #FOSS work on GitHub <a href='https://github.com/Pawarashish564'>@Aashish Pawar⚡</a> 
+<tr align='center'  width='100%'><td align='center'><sup> Follow Aashish's #FOSS work on GitHub <a href='https://github.com/Pawarashish564'>@Aashish Pawar⚡</a> 
 </a></sup>🙌</td></tr>
 </table>
 
@@ -35,9 +34,9 @@
 
 # 👉 Test a Infinite Series Function
 
-> ``` just use -f command line option with a function like 1/n , 1/n**2, 1/fact(n),1/n*2,1/n**3 ``` etc and provide upper and lower limit (starting and ending points of a series).
+> just use -f command line option with a function like ``` 1/n , 1/n**2, 1/fact(n),1/n*2,1/n**3 ``` etc and provide upper and lower limit (starting and ending points of a series).
 
-`Supported Mathematical functions` are:
+Supported Mathematical functions are:
 
 - 🥞 fact(n) ✓ (calculation many n! type of series)
 - 🤠 trigonometric functions sin(n), cos(n), tan(n) ✓
@@ -48,7 +47,7 @@
 
 ## GETTING STARTED!
 
-Let's check simple infinite series convergence..
+Let's check simple infinite series convergence.
 
 #### ⚡️ Quick Overview
 Consider this series. 
@@ -56,9 +55,10 @@ Consider this series.
 <p align="center">
 <img src="https://latex.codecogs.com/svg.latex?\sum_{n=0}^{%20\infty%20}%201/n!">
 </p>
-we know that this series converge to Eular constant (e). let check that using the tool.
+we know that this series converge to <a href="https://en.wikipedia.org/wiki/E_(mathematical_constant)">Eular constant (e)</a>. let check that using the tool.
 <br>
-Run the following. 💯
+
+💯 Run the following. 
 
 ```sh
 python series_calc.py -f 1/fact(n) -l 0
