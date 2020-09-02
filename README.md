@@ -74,7 +74,7 @@ python series_calc.py -f 1/fact(n) -l 0
 
 There are just one option i.e -f which is important for your series_calc workflow. Specify the lower limit using -l or upper limit using -u and precision using -s (scale) option. 
 <div align="center">
-<img src = ".github/demo.gif">
+<img src = ".github/demo_2.gif">
 </div>
 <br>
 <!-- ![]() -->
