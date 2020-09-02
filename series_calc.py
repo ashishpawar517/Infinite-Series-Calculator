@@ -2,7 +2,7 @@
 # for math functionalities
 import math as m
 # for high precision float handling
-from decimal import *
+from decimal import Decimal,getcontext
 # for argument parsing command line
 import argparse
 # for docstrings and text dedent
@@ -67,11 +67,9 @@ args = parser.parse_args()
 # first argument
 # print(args.f[0])
 try:
-# create a lambda function using eval
+    # create a lambda function using eval
     fn = eval('lambda n:' + args.f[0])
-# fn = eval(fn)
-
-# set new precision 
+    #set new precision 
     getcontext().prec = args.s
 
 # infinite series
@@ -95,17 +93,15 @@ try:
             print(CYELLOW,"[_____.] : =>", res,CEND,end='\r')
         else:
             print(CYELLOW,"[______] : =>", res,CEND,end='\r')
-        
-        # time.sleep(1.0)
     
     # printing the result
     print(CGREEN,"[OUTPUT] : =>", res,CEND,end="\r")
 
-except ZeroDivisionError as identifier:
+except ZeroDivisionError :
     print(CRED,'[ERROR] Please change the lower limit. (start with 1)',CEND)
 
-except SyntaxError as identifier:
+except SyntaxError :
     print(CRED,'[ERROR] Please check the function provided. (missing brackets or incomplete/incompatible operation)',CEND)
 
-except OverflowError as identifier:
+except OverflowError :
     print(CRED,'[ERROR] Please check the function provided. (Max limit Reached) last value found =',res,CEND)

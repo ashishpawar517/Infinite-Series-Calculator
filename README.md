@@ -38,7 +38,7 @@
 
 Supported Mathematical functions are:
 
-- 🥞 fact(n) ✓ (calculation many n! type of series)
+- 🥞fact(n) ✓ (calculation many n! type of series)
 - 🤠 trigonometric functions sin(n), cos(n), tan(n) ✓
 - 🐎 sqrt(n), cuberoot(n) ✓
 - 🗃 More Functions coming soon ✓
@@ -46,7 +46,7 @@ Supported Mathematical functions are:
 <!-- - 💯 other series functions ✓ -->
 <br>
 
-## GETTING STARTED!
+## GETTING STARTED
 
 Let's check simple infinite series convergence.
 
@@ -70,7 +70,7 @@ python series_calc.py -f 1/fact(n) -l 0
 
 <br>
 
-## Workflow ! 
+## Workflow 
 
 There are just one option i.e -f which is important for your series_calc workflow. Specify the lower limit using -l or upper limit using -u and precision using -s (scale) option. 
 <div align="center">
@@ -84,7 +84,6 @@ There are just one option i.e -f which is important for your series_calc workflo
 Use -h option to get information about all the options supported.
 
 ![](.github/help_menu.png)
-
 
 ## Todo
 
