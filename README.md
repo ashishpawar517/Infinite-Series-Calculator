@@ -40,8 +40,9 @@ Supported Mathematical functions are:
 
 - 🥞 fact(n) ✓ (calculation many n! type of series)
 - 🤠 trigonometric functions sin(n), cos(n), tan(n) ✓
-- 🗃 More Functions coming soon ✓
 - 🐎 sqrt(n), cuberoot(n) ✓
+- 🗃 More Functions coming soon ✓
+
 <!-- - 💯 other series functions ✓ -->
 <br>
 
@@ -69,4 +70,4 @@ python series_calc.py -f 1/fact(n) -l 0
 
 <br>
 
-# Work in Progress 🏗 ...
+## WORK IN  PROGRESS 🏗 ...
