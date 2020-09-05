@@ -1,58 +1,15 @@
 
-# for math functionalities
-import math as m
-# for high precision float handling
-from decimal import Decimal,getcontext
 # for argument parsing command line
 import argparse
 # for docstrings and text dedent
 import textwrap
-# import time
-
-import mpmath 
+# import mpmath lib
+from mpmath import * 
 # color codes
 CRED = '\033[91m'
 CGREEN= '\033[92m'
 CYELLOW='\033[33m'
 CEND = '\033[0m'
-
-# Basic math constants
-e = m.e
-pi = m.pi
-
-# Basic Math function definitions
-def log(n):
-    return mpmath.log10(n)
-
-def ln(n):
-    return mpmath.log(n)
-
-def fact(n):
-    return mpmath.fac(n)
-
-def sin(n):
-    return mpmath.sin(n)
-
-def cos(n):
-    return mpmath.cos(n)
-
-def tan(n):
-    return mpmath.tan(n)
-
-def sqrt(n):
-    return mpmath.sqrt(n)
-
-def cuberoot(n):
-    return mpmath.cbrt(n)
-
-    
-def gamma(n):
-    return mpmath.gamma(n)
-
-# mpmath functions
-def zeta(n):
-    return mpmath.zeta(n)
-
 
 # command line argument processing
 parser = argparse.ArgumentParser(
@@ -83,39 +40,12 @@ args = parser.parse_args()
 # first argument
 # print(args.f[0])
 try:
-    # create a lambda function using eval
-    fn = eval('lambda n:' + args.f[0])
-    #set new precision 
-    # getcontext().prec = args.s
-    # mpmath.mp.dps = 100
-    mpmath.mp.dps = args.s
-
-    # infinite series
-    # as this is going to be a finite series but as the principle hypothesis in infinite series states that
-    # any convergent infinite series will converge to some arbitrary constant after some iteration.
-    res = mpmath.mpf(0.0)
-
-    upper_limit = args.upper
-    lower_limit = args.lower
-    if upper_limit == lower_limit:
-        res = fn(1) 
-    else:
-        for i in range(lower_limit, upper_limit+1):
-            res = res + fn(i)
-        if i%6 == 1:
-            print(CYELLOW,"[._____] : =>", res,CEND,end='\r')
-        elif i%6 == 2:
-            print(CYELLOW,"[__.___] : =>", res,CEND,end='\r')
-        elif i%6 == 3:
-            print(CYELLOW,"[___.__] : =>", res,CEND,end='\r')
-        elif i%6 == 4:
-            print(CYELLOW,"[____._] : =>", res,CEND,end='\r')
-        elif i%6 == 5:
-            print(CYELLOW,"[_____.] : =>", res,CEND,end='\r')
-        else:
-            print(CYELLOW,"[______] : =>", res,CEND,end='\r')
     
-    # printing the result
+    mp.dps =args.s 
+    fn = eval(args.f[0])
+    
+    res = fn
+    #print result 
     print(CGREEN,"[OUTPUT] : =>", res,CEND,end="\r")
 
 except ZeroDivisionError :
@@ -124,5 +54,5 @@ except ZeroDivisionError :
 except SyntaxError :
     print(CRED,'[ERROR] Please check the function provided. (missing brackets or incomplete/incompatible operation)',CEND)
 
-except OverflowError :
+except NameError :
     print(CRED,'[ERROR] Please check the function provided. (Max limit Reached) last value found =',res,CEND)
