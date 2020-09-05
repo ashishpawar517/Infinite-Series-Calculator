@@ -8,6 +8,8 @@ import argparse
 # for docstrings and text dedent
 import textwrap
 # import time
+
+import mpmath
 # color codes
 CRED = '\033[91m'
 CGREEN= '\033[92m'
@@ -43,6 +45,15 @@ def sqrt(n):
 def cuberoot(n):
     return n**(1/3)
 
+def gamma(n):
+    return m.gamma(n)
+
+
+# mpmath functions
+def zeta(n):
+    return mpmath.zeta(n)
+
+
 # command line argument processing
 parser = argparse.ArgumentParser(
     prog='series_calc', formatter_class=argparse.RawDescriptionHelpFormatter,
@@ -76,7 +87,7 @@ try:
     fn = eval('lambda n:' + args.f[0])
     #set new precision 
     getcontext().prec = args.s
-
+    mpmath.mp.dps = 100
 # infinite series
 # as this is going to be a finite series but as the principle hypothesis in infinite series states that
 # any convergent infinite series will converge to some arbitrary constant after some iteration.
