@@ -9,7 +9,7 @@ import argparse
 import textwrap
 # import time
 
-import mpmath
+import mpmath 
 # color codes
 CRED = '\033[91m'
 CGREEN= '\033[92m'
@@ -22,32 +22,32 @@ pi = m.pi
 
 # Basic Math function definitions
 def log(n):
-    return m.log10(n)
+    return mpmath.log10(n)
 
 def ln(n):
-    return m.log(n)
+    return mpmath.log(n)
 
 def fact(n):
-    return m.factorial(n)
+    return mpmath.fac(n)
 
 def sin(n):
-    return m.sin(n)
+    return mpmath.sin(n)
 
 def cos(n):
-    return m.cos(n)
+    return mpmath.cos(n)
 
 def tan(n):
-    return m.tan(n)
+    return mpmath.tan(n)
 
 def sqrt(n):
-    return m.sqrt(n)
+    return mpmath.sqrt(n)
 
 def cuberoot(n):
-    return n**(1/3)
+    return mpmath.cbrt(n)
 
+    
 def gamma(n):
-    return m.gamma(n)
-
+    return mpmath.gamma(n)
 
 # mpmath functions
 def zeta(n):
@@ -86,17 +86,22 @@ try:
     # create a lambda function using eval
     fn = eval('lambda n:' + args.f[0])
     #set new precision 
-    getcontext().prec = args.s
-    mpmath.mp.dps = 100
-# infinite series
-# as this is going to be a finite series but as the principle hypothesis in infinite series states that
-# any convergent infinite series will converge to some arbitrary constant after some iteration.
-    res = Decimal(0.0)
+    # getcontext().prec = args.s
+    # mpmath.mp.dps = 100
+    mpmath.mp.dps = args.s
+
+    # infinite series
+    # as this is going to be a finite series but as the principle hypothesis in infinite series states that
+    # any convergent infinite series will converge to some arbitrary constant after some iteration.
+    res = mpmath.mpf(0.0)
 
     upper_limit = args.upper
     lower_limit = args.lower
-    for i in range(lower_limit, upper_limit+1):
-        res = res + Decimal(fn(i))
+    if upper_limit == lower_limit:
+        res = fn(1) 
+    else:
+        for i in range(lower_limit, upper_limit+1):
+            res = res + fn(i)
         if i%6 == 1:
             print(CYELLOW,"[._____] : =>", res,CEND,end='\r')
         elif i%6 == 2:
