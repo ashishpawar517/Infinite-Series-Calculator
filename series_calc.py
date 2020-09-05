@@ -13,6 +13,11 @@ CRED = '\033[91m'
 CGREEN= '\033[92m'
 CYELLOW='\033[33m'
 CEND = '\033[0m'
+
+# Basic math constants
+e = m.e
+pi = m.pi
+
 # Basic Math function definitions
 def log(n):
     return m.log10(n)
