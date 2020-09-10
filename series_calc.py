@@ -4,8 +4,8 @@ import argparse
 # for docstrings and text dedent
 import textwrap
 # import mpmath lib
-from mpmath import * 
-import sys
+from mpmath import mp,nsum,inf,fac,tan,sin,cos,tanh,sinh,cosh,tanh,log,ln,sqrt,cbrt
+
 # color codes
 CRED = '\033[91m'
 CGREEN= '\033[92m'
@@ -49,11 +49,12 @@ try:
     res = fn
     print(CGREEN,"[OUTPUT] : =>", res,CEND,end="\r")
 
-except ZeroDivisionError as e :
+except ZeroDivisionError:
     print(CRED,'[ERROR] Check the lower limit provided (Please change it to 1) ',CEND)
 # 
-except SyntaxError :
+except SyntaxError:
     print(CRED,'[ERROR] Please check the function provided. (missing brackets or incomplete/incompatible operation)',CEND)
 
-except  NameError:
+except  NameError :
     print(CRED,'[ERROR] Please check the function provided. (incompatible function .see help)',CEND)
+    # print(nm)
