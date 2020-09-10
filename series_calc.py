@@ -6,6 +6,7 @@ import textwrap
 # import mpmath lib
 from mpmath import mp,nsum,inf,fac,tan,sin,cos,tanh,sinh,cosh,tanh,log,ln,sqrt,cbrt
 
+import animation
 # color codes
 CRED = '\033[91m'
 CGREEN= '\033[92m'
@@ -38,23 +39,25 @@ parser.add_argument('-v', '--version', action='version',
                     version='series_calc.py - 1.0')
 args = parser.parse_args()
 
-try:
-    mp.dps =args.p
-    lower_limit = args.lower
-    upper_limit = args.upper
-    fn = None 
-    str_cmd = "nsum(lambda n:"+args.f[0]+",["+str(lower_limit)+","+str(upper_limit)+"])"
-    # print(str_cmd)
-    fn = eval(str_cmd)        
-    res = fn
-    print(CGREEN,"[OUTPUT] : =>", res,CEND,end="\r")
+@animation.wait('bar')
+def run():
+    try:
+        mp.dps =args.p
+        lower_limit = args.lower
+        upper_limit = args.upper
+        fn = None 
+        str_cmd = "nsum(lambda n:"+args.f[0]+",["+str(lower_limit)+","+str(upper_limit)+"])"
+        # print(str_cmd)
+        fn = eval(str_cmd)        
+        res = fn
+        print(CGREEN,"[OUTPUT] : =>", res,CEND)
 
-except ZeroDivisionError:
-    print(CRED,'[ERROR] Check the lower limit provided (Please change it to 1) ',CEND)
-# 
-except SyntaxError:
-    print(CRED,'[ERROR] Please check the function provided. (missing brackets or incomplete/incompatible operation)',CEND)
-
-except  NameError :
-    print(CRED,'[ERROR] Please check the function provided. (incompatible function .see help)',CEND)
+    except ZeroDivisionError:
+        print(CRED,'[ERROR] Check the lower limit provided (Please change it to 1) ',CEND)
+    except SyntaxError:
+        print(CRED,'[ERROR] Please check the function provided. (missing brackets or incomplete/incompatible operation)',CEND)
+    except  NameError :
+        print(CRED,'[ERROR] Please check the function provided. (incompatible function .see help)',CEND)
     # print(nm)
+
+run()
