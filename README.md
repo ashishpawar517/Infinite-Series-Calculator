@@ -48,9 +48,9 @@ Supported Mathematical functions are:
 - 🥞 fac(n) ✓ 
 - 🤠 trigonometric functions sin(n), cos(n), tan(n) ✓
 - 🐎 sqrt(n), cbrt(n) ✓
-- sinh() cosh() tanh() ✓ 
-- exp() → exponential function ✓
-- 🗃 More Functions coming soon ✓
+- 📟 sinh() cosh() tanh() ✓ 
+- 🤯 exp() → exponential function ✓
+- 🗃  More Functions coming soon ✓
 
 <!-- - 💯 other series functions ✓ -->
 <br>
@@ -82,7 +82,7 @@ Let's check simple infinite series convergence.
 Consider this series. 
 <br>
 <p align="center">
-<img src="https://latex.codecogs.com/svg.latex?\sum_{n=0}^{%20\infty%20}%201/n!">
+<img src="https://latex.codecogs.com/svg.latex?\sum_{n=0}^{%20\infty%20}%20 \frac{1}{n!}">
 </p>
 we know that this series converge to <a href="https://en.wikipedia.org/wiki/E_(mathematical_constant)">Eular constant (e)</a>. let check that using the tool.
 <br>
@@ -115,7 +115,6 @@ Use -h option to get information about all the options supported.
 
 ## Todo
 
-- [ ] Arithmetic and mathematical functions
-<!-- - [ ] Multiple Transforms  -->
-- [ ] Mathematical Constants support () 
+- [x] Arithmetic and mathematical functions
+- [x] Mathematical Constants support (e,pi,phi) 
 - [ ] command line animation while calculation is running 
