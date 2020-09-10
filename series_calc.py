@@ -38,25 +38,15 @@ parser.add_argument('-v', '--version', action='version',
                     version='series_calc.py - 1.0')
 args = parser.parse_args()
 
-# first argument
-# print(args.f[0])
 try:
-    # efficiently
     mp.dps =args.p
     lower_limit = args.lower
     upper_limit = args.upper
     fn = None 
-    # try:
     str_cmd = "nsum(lambda n:"+args.f[0]+",["+str(lower_limit)+","+str(upper_limit)+"])"
-    print(str_cmd)
-    fn = eval(str_cmd)
-        # print(fn)
-    # except(SyntaxError, NameError, TypeError, ZeroDivisionError):
-        # print(CRED,'[ERROR] Please check input provided in -f ',res,CEND)
-        # sys.exit(0)
-        
+    # print(str_cmd)
+    fn = eval(str_cmd)        
     res = fn
-    #print result 
     print(CGREEN,"[OUTPUT] : =>", res,CEND,end="\r")
 
 except ZeroDivisionError as e :

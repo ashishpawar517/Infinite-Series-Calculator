@@ -45,13 +45,35 @@ https://img.shields.io/badge/Emoji%20%F0%9F%98%9C-Commits-yellow
 
 Supported Mathematical functions are:
 
-- 🥞fact(n) ✓ (calculation many n! type of series)
+- 🥞 fac(n) ✓ 
 - 🤠 trigonometric functions sin(n), cos(n), tan(n) ✓
-- 🐎 sqrt(n), cuberoot(n) ✓
+- 🐎 sqrt(n), cbrt(n) ✓
+- sinh() cosh() tanh() ✓ 
+- exp() → exponential function ✓
 - 🗃 More Functions coming soon ✓
 
 <!-- - 💯 other series functions ✓ -->
 <br>
+
+## Calculation of PI
+
+Consider this series. 
+
+<p align="center">
+<img src="https://latex.codecogs.com/svg.latex?\sum_{n=0}^{\infty}%20\frac{4*(-1)^{(n+1)}}{(2n-1)}
+">
+</p>
+
+This series evalues to constant <a href="https://en.wikipedia.org/wiki/Pi"> PI (π)</a>.
+
+so , we'll convert it to the function `4*(-1)**(n+1)/(2*n-1)`. And see if can get value of  pi .
+
+```python
+$> python series_calc.py -f 4*(-1)**(n+1)/(2*n-1)
+ [OUTPUT] : => 3.1415926535897932384626433832795028841971693993751
+$> python series_calc.py -f 4*(-1)**(n+1)/(2*n-1) -p 100
+ [OUTPUT] : => 3.141592653589793238462643383279502884197169399375105820974944592307816406286208998628034825342117068
+```
 
 ## GETTING STARTED
 
@@ -94,6 +116,13 @@ Use -h option to get information about all the options supported.
 
 ## Todo
 
-- Arithmetic and mathematical functions
-- Multiple Transforms 
-- Mathematical Constants support
+- [ ] Arithmetic and mathematical functions
+<!-- - [ ] Multiple Transforms  -->
+- [ ] Mathematical Constants support () 
+- [ ] command line animation while calculation is running 
+
+## ChangeLog
+
+- constants added e,pi,phi
+- precision upto 500 decimals
+- added function from mpmath library.
