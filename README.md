@@ -23,7 +23,7 @@ https://img.shields.io/badge/Emoji%20%F0%9F%98%9C-Commits-yellow
            <code>Simple Infinite Series Calculator</code></strong><br />
             👉 Just Put a Series function,upper and lower limits and specifiy precision.
             <br>
-            <img src="https://latex.codecogs.com/svg.latex?\sum_{n=0}^{100000}%20f(n)">
+            <img src="https://latex.codecogs.com/svg.latex?\sum_{n=0}^{\infty}%20f(n)">
         </td>
     </tr>
     <tr align='center' >
@@ -59,10 +59,9 @@ Supported Mathematical functions are:
 
 Consider this series. 
 
-<p align="center">
-<img src="https://latex.codecogs.com/svg.latex?\sum_{n=0}^{\infty}%20\frac{4*(-1)^{(n+1)}}{(2n-1)}
-">
-</p>
+<div align="center">
+<img src="https://latex.codecogs.com/svg.latex?\sum_{n=0}^{\infty}%20\frac{4*(-1)^{(n+1)}}{(2n-1)}">
+</div>
 
 This series evalues to constant <a href="https://en.wikipedia.org/wiki/Pi"> PI (π)</a>.
 
@@ -120,9 +119,3 @@ Use -h option to get information about all the options supported.
 <!-- - [ ] Multiple Transforms  -->
 - [ ] Mathematical Constants support () 
 - [ ] command line animation while calculation is running 
-
-## ChangeLog
-
-- constants added e,pi,phi
-- precision upto 500 decimals
-- added function from mpmath library.
