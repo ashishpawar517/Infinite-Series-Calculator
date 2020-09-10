@@ -82,7 +82,7 @@ Let's check simple infinite series convergence.
 Consider this series. 
 <br>
 <p align="center">
-<img src="https://latex.codecogs.com/svg.latex?\sum_{n=0}^{%20\infty%20}%20 \frac{1}{n!}">
+<img src="https://latex.codecogs.com/svg.latex?\sum_{n=0}^{%20\infty%20}%20\frac{1}{n!}">
 </p>
 we know that this series converge to <a href="https://en.wikipedia.org/wiki/E_(mathematical_constant)">Eular constant (e)</a>. let check that using the tool.
 <br>
